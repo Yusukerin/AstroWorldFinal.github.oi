@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1</title>
+    <link rel="icon" href="https://i.postimg.cc/05mvFT6v/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="productpage.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <div>
+                    <li><a href="Astro World.html">Home</a></li>
+                    <li><a href="Astro World Shop.html">Shop</a></li>
+                    <li><a href="Astro World About Us.html">About Us</a></li>
+                    <li><a href="Astro World Help Center.html">Help</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div id="preloader">
+            <div id="loader">
+                <img src="logo.png" alt="Preloader Image">
+            </div>
+        </div>
+
+        <center>
+            <div class="product-detail">
+                <div class="product-image" onmouseover="changeImage()" onmouseout="restoreImage()">
+                    <img id="mainImage" src="shoes1front.png" alt="Product 1" style="background-color: transparent; height: 40%;">
+                </div>
+                <div class="product-info">
+                    <h1>Supreme x Dunk Low 'Black'</h1>
+                    <p>Releasing Summer 2024.</p>
+                    <p>Price: ₱6,700</p>
+                    <div>
+                        <label for="sizes">Size:</label>
+                        <select id="sizeDropdown">
+                            <option>Select</option>
+                            <option value="small">8</option>
+                            <option value="medium">9</option>
+                            <option value="large">10</option>
+                        </select>
+                    </div>
+
+                    <a href="#" id="buyNowButton" onclick="redirectToWebsite()"><button type="button" class="Buy-now"><p class="Buy"> Buy Now!</p></button></a>
+                </div>
+            </div>
+        </center>
+
+        <div class="footer">
+            <p>@2023AstroWorld. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.getElementById("preloader").style.display = "none";
+            }, 1000);
+        });
+
+        function changeImage() {
+            document.getElementById("mainImage").src = "shoes1back.png"; // Replace with the URL of the other image
+        }
+
+        function restoreImage() {
+            document.getElementById("mainImage").src = "shoes1front.png";
+        }
+
+        function redirectToWebsite() {
+            var selectedSize = document.getElementById("sizeDropdown").value;
+            var smallURL = "buy shoes 1-small.html";
+            var mediumURL = "buy shoes 1-medium.html";
+            var largeURL = "buy shoes 1-large.html";
+            var targetURL;
+
+            switch (selectedSize) {
+                case "small":
+                    targetURL = smallURL;
+                    break;
+                case "medium":
+                    targetURL = mediumURL;
+                    break;
+                case "large":
+                    targetURL = largeURL;
+                    break;
+                default:
+                    alert("Please select a size.");
+                    return;
+            }
+
+            window.location.href = targetURL;
+        }
+    </script>
+</body>
+</html>

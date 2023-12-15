@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro World</title>
+  <link rel="icon" href="https://i.postimg.cc/05mvFT6v/android-chrome-192x192.png" type="image/x-icon">
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+.navbar{
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: top;
+      justify-content: space-between;
+
+}
+.logo{
+    align-items: left ;
+    height: auto;
+    margin-right: auto; 
+    margin-left: -150px; 
+    margin-top: -50px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar ul div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.navbar ul li img {
+  width: 10%;
+  height: 10%;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+
+}
+.navbar ul li:hover::after {
+    width: 100%;
+    color: white;
+
+}
+
+.button {
+  height: 30px;
+}
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  }
+
+
+  .content h1:hover {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px whitesmoke;
+  }
+
+  .content p {
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: -20px;
+    margin-bottom: 50px;
+    font-size: 22px; /* Adjust the font size as needed */
+}
+ 
+  .footer {
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+  
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://i.ytimg.com/vi/WCsO4PALmhY/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}   
+
+
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .content h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    margin-bottom: 20px;
+    color: #F0FFF0; 
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, whitesmoke,#F0FFF0); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    transition: color 0.3s; 
+    cursor: pointer; 
+    
+  }
+  
+
+  h1:hover {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px whitesmoke;
+  }
+  
+  
+
+
+  .content p{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: 'Courier New', Courier, monospace; 
+    margin-left: -20px;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+ 
+  .footer {
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+  
+  }
+  
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.center .content {
+  color: #fff;
+}
+
+.center .btns {
+  margin-top: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.center .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.center .btns button:first-child {
+  color: #fff;
+  background: none;
+}
+
+.btns button:first-child:hover {
+  background: white;
+  color: black;
+}
+
+.center .btns button:last-child {
+  background: white;
+  color: black;
+}
+
+  .footer img {
+    margin-right: 600px;
+    margin-left: -600px;
+    margin-bottom: -15px;
+  }
+
+  .footer p{
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    padding: 6px 24px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .button:active {
+    transform: scale(0.98);
+  }
+  /* Home */
+  .home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+  }
+  .home.show::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .form_container {
+    position: fixed;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+    z-index: 100;
+  }
+  .home.show .form_container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .signup_form {
+    display: none;
+  }
+  .form_container.active .signup_form {
+    display: block;
+  }
+  .form_container.active .login_form {
+    display: none;
+  }
+  .form_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .form_container h2 {
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+  }
+  .input_box {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+  }
+  .input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid #aaaaaa;
+  }
+  .input_box input:focus {
+    border-color: black;
+  }
+  .input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #707070;
+  }
+  .input_box i.email,
+  .input_box i.password {
+    left: 0;
+  }
+  .input_box input:focus ~ i.email,
+  .input_box input:focus ~ i.password {
+    color: #000000;
+  }
+  .input_box i.pw_hide {
+    right: 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .option_field {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .form_container a {
+    color: red;
+    font-size: 12px;
+  }
+  .form_container a:hover {
+    text-decoration: underline;
+  }
+  .checkbox {
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+  }
+  .checkbox input {
+    accent-color: black
+    ;
+  }
+  .checkbox label {
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: #0b0217;
+  }
+  .form_container .button {
+    background: #fff; /* Set the background color to white */
+    color: #000; /* Set the text color to black */
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+  .login_signup {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+/* Adjustments for better visibility */
+.form_container {
+    background: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+.form_container.active #login {
+  color: red;
+  text-decoration: underline;
+
+}
+
+#form-open {
+  background-color: white;
+}
+
+#preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000; /* Set black background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #loader img {
+      animation: heartbeat 1.5s infinite; /* Apply heartbeat animation to the image */
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1);
+      }
+      75% {
+        transform: scale(0.8);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <img src="logo.png" class="logo">
+      <ul>
+        <div>
+          <li><a href="Astro World.html">Home</a></li>
+          <li><a href="Astro World Shop.html">Shop</a></li>
+          <li><a href="Astro World About Us.html">About Us</a></li>
+          <li><a href="Astro World Help Center.html">Help</a></li>
+        </div>
+      </ul>
+      <button class="button" id="form-open">Login</button>
+    </div>
+  </div>
+
+  <div id="preloader">
+    <div id="loader">
+      <img src="logo.png" alt="Preloader Image">
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Where Every Piece Tells a Story</h1>
+    <p><b>Astro World</b> offers staff-picked exclusive clothing and accessories.<br>
+      Discover the Universe of Fashion at Astro World!<br>
+      Elevate your style with the latest trends, including Nike and more.<br>
+      Your cosmic wardrobe awaits!
+    </p>
+  </div>
+  <div class="center">
+    <div class="btns">
+      <a href="Astro World Shop.html"><button>Shop</button></a>
+      <a href="Astro World Help Center.html"><button>Contact Us</button></a>
+    </div>
+  </div>
+
+  <!-- Home -->
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+      <!-- Login From -->
+      <div class="form login_form">
+        <form action="#">
+          <h2>Login</h2>
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </span>
+            <a href="#" class="forgot_pw">Forgot password?</a>
+          </div>
+          <button class="button">Login Now</button>
+          <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+        </form>
+      </div>
+      <!-- Signup Form -->
+      <div class="form signup_form">
+        <form action="#">
+          <h2>Signup</h2>
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Confirm password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <button class="button">Signup Now</button>
+          <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+  <div class="footer">
+    <a href="https://facebook.com"><img src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png" width="20px" height="20px"></a> &nbsp;&nbsp;
+    <a href="https://instagram.com"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" width="20px" height="20px"></a> &nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" width="20px" height="20px"></a> &nbsp;&nbsp;
+    <p>@2023AstroWorld. All Rights Reserved</p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Hide the preloader when the content is fully loaded
+      setTimeout(function () {
+        document.getElementById("preloader").style.display = "none";
+      }, 1000); // Adjust the delay as needed
+    });
+  </script>
+</body>
+
+</html>

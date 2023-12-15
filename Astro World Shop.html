@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/05mvFT6v/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="Shop.css">
+    <link rel="stylesheet" href="product.css">
+    <title>Shop Section</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+        <img src="logo.png" class="logo">
+        <ul>
+            <div>
+            <li><a href="Astro World.html">Home</a></li>
+            <li><a href="Astro World Shop.html">Shop</a></li>
+            <li><a href="Astro World About Us.html">About Us</a></li>
+            <li><a href="Astro World Help Center.html">Help</a></li>
+            </div>
+        </ul>
+    </div> 
+    
+<div id="preloader">
+    <div id="loader">
+      <img src="logo.png" alt="Preloader Image">
+    </div>
+  </div>
+    <div class="shop-section">
+    
+        <div class="category" id="shirts">
+            <div class="item">
+                <img src="https://i.postimg.cc/nrG0NnJM/2.png" alt="Shirts">
+                
+                <div class="item-text"><a class="link" href="Shirts.html">Shirts</a></div>
+            </div>
+        </div>
+        <div class="category" id="Shorts">
+            <div class="item">
+                <img src="https://i.postimg.cc/P5x2FGFr/3.png" alt="Shorts">
+                <div class="item-text"><a class="link" href="Shorts.html">Shorts</a></div>
+
+            </div>
+        </div>
+        <div class="category" id="shoes">
+            <div class="item">
+                <img src="https://i.postimg.cc/KvQ0NcfH/1.png" alt="Shoes">
+                <div class="item-text"><a class="link" href="Shoes.html">Shoes</a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Hide the preloader when the content is fully loaded
+          setTimeout(function () {
+            document.getElementById("preloader").style.display = "none";
+          }, 1000); // Adjust the delay as needed
+        });
+      </script>
+</body>
+</html>

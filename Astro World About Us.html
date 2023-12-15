@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Astro World About Us</title>
+        <link rel="icon" href="https://i.postimg.cc/05mvFT6v/android-chrome-192x192.png" type="image/x-icon">
+        <link rel="icon" type="image/png" href="/images/logo.png">
+        <style>
+              body, html {
+    overflow-x: hidden;
+}
+.navbar{
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: top;
+      justify-content: space-between;
+
+}
+.logo{
+    align-items: left ;
+    height: auto;
+    margin-right: auto; 
+    margin-left: -100px; 
+    margin-top: -50px;
+    width: 150px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    color: white;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://cdna.artstation.com/p/marketplace/presentation_assets/000/398/210/large/file.jpg?1591563603);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+       
+       
+
+
+  .about-us-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-us-image-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: transparent;
+    border-radius: 10px;
+    transition: transform 0.2s; /* Smooth image scaling on hover */
+}
+
+.about-us-image-container:hover {
+    transform: scale(1.1); /* Enlarge image container on hover */
+}
+
+.about-us-image {
+    background-image: none, url(https://imageupload.io/ib/HH3OCTCkLrtrtUV_1697466427.jpg);
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.separator {
+    flex: 0 0 2px; /* 2px wide separator */
+    height: 200px; /* Adjust height as needed */
+    background: #ccc; /* Gray separator */
+    margin: 0 20px; /* Add some space between image and text */
+}
+
+.about-us-text {
+    flex: 2;
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-us-title {
+    font-size: 75px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+ .footer {
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+          
+}
+ .footer img {
+    margin-right: 600px;
+     margin-left: -600px;
+    margin-bottom: -20px;
+}
+    
+ .footer-contacts {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Set black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #loader img {
+    animation: heartbeat 1.5s infinite; /* Apply heartbeat animation to the image */
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+        <img src="logo.png" class="logo">
+        <ul>
+            <div>
+            <li><a href="Astro World.html">Home</a></li>
+            <li><a href="Astro World Shop.html">Shop</a></li>
+            <li><a href="Astro World About Us.html">About Us</a></li>
+            <li><a href="Astro World Help Center.html">Help</a></li>
+
+            </div>
+        </ul>
+    </div> 
+
+    <div id="preloader">
+        <div id="loader">
+          <img src="logo.png" alt="Preloader Image">
+        </div>
+      </div>
+    
+
+    <div class="about-us-section">
+        <div class="about-us-image-container">
+            <img src="https://i.postimg.cc/hvPtwm8m/astroworld-1.png" alt="About Us" class="about-us-image">
+        </div>
+        <div class="separator"></div>
+        <div class="about-us-text">
+            <h2 class="about-us-title">About Us</h2>
+            <p>
+                Federico Omolon IV and Khervin Merida shared a journey rooted in a common dream.
+                Our mutual passion for fashion and footwear became the blueprint for our collaborative website, <b>AstroWorld</b>.
+                Together, we embarked on a journey to bring our vision to life, driven by a shared determination to redefine the world of style.
+            </p>
+        </div>
+    </div>
+
+    <div class="about-us-section">
+        <div class="about-us-image-container">
+            <img src="https://scontent.fdgt1-1.fna.fbcdn.net/v/t1.15752-9/400689885_1582984755440864_4134687962901188887_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=Nomqcke-_0wAX-duWXU&_nc_ht=scontent.fdgt1-1.fna&oh=03_AdQbc9kZDK5e7OQY0AWhNk_o5nINS3yG6sMvLVEYihwTdA&oe=658378AD" alt="About Us" class="about-us-image" width="450">
+        </div>
+        <div class="separator"></div>
+        <div class="about-us-text">
+            <h3 class="about-us-title">Federico Omolon IV</h3>
+            <h3 class="Position">Chief Executive Officer and Chief Marketing Operator</h3>
+            <p style="font-size: 35px;">
+                "Big boy steppin, gang gang gang gang gang."
+            </p>
+        </div>
+    </div>
+
+    <div class="about-us-section">
+        <div class="about-us-image-container">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/395646045_3660830117533704_1325343656601248695_n.jpg?stp=dst-jpg_p320x320&_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_ohc=m_wrg6qsmVAAX-rWBoP&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdShECr9Dz90HsVgibJzGFhpbVUf8ktx316RRBkXzIYHww&oe=65838F70" alt="About Us" class="about-us-image" width="420">
+        </div>
+        <div class="separator"></div>
+        <div class="about-us-text">
+            <h3 class="about-us-title">Khervin Merida</h3>
+            <h3 class="Position">President and Chief Operative Officer</h3>
+            <p style="font-size: 25px;">
+                "I learned a lot from my mistakes, so I decided to make a lot of mistakes to learn more."
+            </p>
+        </div>
+    </div>
+
+    <div class="about-us-section">
+        <div class="about-us-image-container">
+            <img src="https://scontent.fdgt1-1.fna.fbcdn.net/v/t39.30808-6/315768629_2171091563062995_3834445463456312916_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeHiOAnp_fQG7YQdPYYyQAbNyhRPs9Eo4vTKFE-z0Sji9F3IIGig0QPXMoRnDWqAGpYUhhcEj15UdXf81TEPSrFd&_nc_ohc=NKfTq0BW-PEAX9zzJTC&_nc_ht=scontent.fdgt1-1.fna&oh=00_AfBNqeDgJ1SpeYcETS0Y6mkxJ6YBNsuLJv3V3zZSenkUjg&oe=6581AAE2" alt="About Us" class="about-us-image" width="450">
+        </div>
+        <div class="separator"></div>
+        <div class="about-us-text">
+            <h3 class="about-us-title">Adrian Lee S. Alacrito</h3>
+            <h3 class="Position">Programmer</h3>
+            <p style="font-size: 35px;">
+                "It's not at all important to get it right the first time. It's vitally important to get it right the last time."
+            </p>
+        </div>
+    </div>
+
+    <div class="about-us-section">
+        <div class="about-us-image-container">
+            <img src="https://scontent.fdgt1-1.fna.fbcdn.net/v/t1.15752-9/403402171_882896466698058_88533585282797450_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEIrD7790gaB7stbBSFHJbi7OdaF2dww2zs51oXZ3DDbE16i1pHoVI-HYao3obtF0UdIqvTT41-pmtwDPuz_sZL&_nc_ohc=GODRaUhAqngAX9nOjhc&_nc_ht=scontent.fdgt1-1.fna&oh=03_AdR2Pz6_5ElKJ0IcLF760LI3viK79YiUbnQmCf6k1ifyVg&oe=65A3E34F" alt="About Us" class="about-us-image" width="420">
+        </div>
+        <div class="separator"></div>
+        <div class="about-us-text">
+            <h3 class="about-us-title">Cloriel Capadngan</h3>
+            <h3 class="Position">System Analysist Executive</h3>
+            <p style="font-size: 25px;">
+                "It's hard to move on when, from the start, you thought she was the last."
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <a href="https://facebook.com"><img src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png" width="20px" height="20px"></a> &nbsp;&nbsp;
+        <a href="https://instagram.com"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" width="20px" height="20px" ></a> &nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" width="20px" height="20px" ></a> &nbsp;&nbsp;
+        <p>@2023AstroWorld. All Rights Reserved</p>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Hide the preloader when the content is fully loaded
+      setTimeout(function () {
+        document.getElementById("preloader").style.display = "none";
+      }, 1000); // Adjust the delay as needed
+    });
+  </script>
+
+</body>
+</html>

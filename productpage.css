@@ -1,0 +1,275 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+
+}
+.logo{
+  align-items: left ;
+  height: auto;
+  margin-right: auto; 
+  margin-left: -100px; 
+  margin-top: -50px;
+  width: 150px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  
+}
+
+.navbar ul li a{
+ 
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: bolder;
+
+}
+.navbar ul li::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+
+
+}
+.navbar ul li:hover::after {
+  width: 100%;
+  background-color: #fff;
+  
+
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://cdna.artstation.com/p/marketplace/presentation_assets/000/398/210/large/file.jpg?1591563603);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px;
+    transition: transform 0.2s;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border: transparent;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.product h2 {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+/* Product Detail Page Styles */
+.product-detail {
+    display: flex;
+    align-items: center;
+    margin: 90px;
+    width: 85%; /* Adjust width as needed */
+    background-color: transparent;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info a{
+ color: transparent;
+}
+.product-detail img {
+    width: 500px;
+    height: 500px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.product-detail h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.product-detail p {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+.footer {
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+  
+  }
+  .footer img {
+    margin-right: 600px;
+    margin-left: -600px;
+    margin-bottom: -20px;
+  }
+  
+  .add-to-cart,
+  .Buy-now {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    height: 60px; /* Adjust the height as needed */
+    width: 200px;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+    border: solid white 1px;
+}
+
+  
+  .add-to-cart:hover,
+  .Buy-now:hover {
+    background-color: gray;
+    transform: scale(1.05);
+  }
+  
+
+  
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Set black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #loader img {
+    animation: heartbeat 1.5s infinite; /* Apply heartbeat animation to the image */
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 30px;
+    color:white; /* Adjust color as needed */
+}
+
+/* Style for select dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555; /* Adjust color as needed */
+    appearance: none; /* Remove default arrow icon in some browsers */
+}
+
+/* Style for option elements */
+option {
+    font-size: 16px;
+    color: #555; /* Adjust color as needed */
+}
+
+/* Additional styling for the Buy Now button */
+.Buy-now {
+    background-color: #3498db; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Buy-now:hover {
+    background-color: #2980b9; /* Set your desired hover background color */
+}
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+

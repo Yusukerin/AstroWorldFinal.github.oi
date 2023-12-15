@@ -1,0 +1,177 @@
+  
+.navbar{
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: top;
+      justify-content: space-between;
+
+}
+.logo{
+    align-items: left ;
+    height: auto;
+    margin-right: auto; 
+    margin-left: -100px; 
+    margin-top: -50px;
+    width: 150px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    color: white;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://cdna.artstation.com/p/marketplace/presentation_assets/000/398/210/large/file.jpg?1591563603);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+       
+       
+
+
+  .about-us-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-us-image-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: transparent;
+    border-radius: 10px;
+    transition: transform 0.2s; /* Smooth image scaling on hover */
+}
+
+.about-us-image-container:hover {
+    transform: scale(1.1); /* Enlarge image container on hover */
+}
+
+.about-us-image {
+    background-image: none, url(https://imageupload.io/ib/HH3OCTCkLrtrtUV_1697466427.jpg);
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.separator {
+    flex: 0 0 2px; /* 2px wide separator */
+    height: 200px; /* Adjust height as needed */
+    background: #ccc; /* Gray separator */
+    margin: 0 20px; /* Add some space between image and text */
+}
+
+.about-us-text {
+    flex: 2;
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-us-title {
+    font-size: 75px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+ .footer {
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+          
+}
+ .footer img {
+    margin-right: 600px;
+     margin-left: -600px;
+    margin-bottom: -20px;
+}
+    
+ .footer-contacts {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Set black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #loader img {
+    animation: heartbeat 1.5s infinite; /* Apply heartbeat animation to the image */
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+

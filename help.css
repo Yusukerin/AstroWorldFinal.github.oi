@@ -1,0 +1,283 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 750px;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+  url(https://cdna.artstation.com/p/marketplace/presentation_assets/000/398/210/large/file.jpg?1591563603);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.logo {
+  align-items: left;
+  height: auto;
+  margin-right: auto; 
+  margin-left: -100px; 
+  margin-top: -50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.Help {
+  margin-left: auto;
+  margin-right: 600px; 
+  margin-top: -450px;
+  padding-left: 10px;
+}
+.help-center h1 {
+  background-color: transparent; 
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px; 
+  margin-bottom: 0px;
+}
+
+.faq {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  max-width: 500px;
+  background-color: #fff;
+  vertical-align: top;
+  cursor: pointer;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  flex: 1; 
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.faq:hover {
+  background-color: #f0f0f0;
+}
+
+.faq h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  margin: 0;
+}
+
+.faq .answer {
+  display: none;
+}
+
+.faq:hover .answer {
+  display: block;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+
+.contact-form-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 780px;
+  margin-top: 50px;
+}
+
+.contact-form {
+  width: 300px; /* Adjust the width as needed */
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ccc;
+}
+
+.separator {
+  flex: 0 0 2px;
+  height: 200px;
+  background: #ccc;
+  margin: 0 20px;
+}
+
+.about-us-text {
+  flex: 2;
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff; /* Add a color to make the text visible */
+}
+
+.about-us-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.about-us-image-container {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: transparent;
+  border-radius: 10px;
+  transition: transform 0.2s; /* Smooth image scaling on hover */
+}
+
+.about-us-image-container:hover {
+  transform: scale(1.1); /* Enlarge image container on hover */
+}
+
+.about-us-image {
+  background-image: none, url(https://imageupload.io/ib/HH3OCTCkLrtrtUV_1697466427.jpg);
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.separator {
+  flex: 0 0 2px; /* 2px wide separator */
+  height: 200px; /* Adjust height as needed */
+  background: #ccc; /* Gray separator */
+  margin: 0 20px; /* Add some space between image and text */
+}
+
+.about-us-text {
+  flex: 2;
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about-us-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  font-family: 'Courier New', Courier, monospace; 
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  font-size: smaller;
+}
+
+.footer img {
+  margin-right: 600px;
+  margin-left: -600px;
+  margin-bottom: -30px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
